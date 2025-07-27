@@ -4,8 +4,11 @@
   <title>Abhishek Pauriyal | Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Icon & Animation CSS -->
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -16,30 +19,46 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
-<style>
-/* Inline summary CSS for demo; use style.css for full control */
-.about-mf .box-shadow-full {padding-top: 4rem;padding-bottom: 4rem;}
-.about-mf .about-img {margin-bottom: 2rem;}
-.about-mf .about-img img {margin-left: 10px;}
-.skill-mf .progress {margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem;}
-.skill-mf .progress .progress-bar {height: .7rem; background-color: #ffbd39;}
-/* Home typing animation */
-#typing-animation {position: relative; font-size: 30px; font-weight: bold; color: #fff; overflow: hidden; white-space: nowrap;}
-.zoom-effect {overflow: hidden; transition: transform 0.3s ease-out;}
-.zoom-effect:hover {transform: scale(1.1);}
-</style>
+  <!-- Inline summary CSS and custom tweaks for demo; use style.css for full control -->
+  <style>
+    .about-mf .box-shadow-full {padding-top: 4rem;padding-bottom: 4rem;}
+    .about-mf .about-img {margin-bottom: 2rem;}
+    .about-mf .about-img img {margin-left: 10px;}
+    .skill-mf .progress {margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem;}
+    .skill-mf .progress .progress-bar {height: .7rem; background-color: #ffbd39;}
+    #typing-animation {position: relative; font-size: 30px; font-weight: bold; color: #fff; overflow: hidden; white-space: nowrap;}
+    .zoom-effect {overflow: hidden; transition: transform 0.3s ease-out;}
+    .zoom-effect:hover {transform: scale(1.1);}
+    /* Responsive padding for container sections */
+    @media (max-width: 767.98px) {
+      .about-mf .box-shadow-full {padding-top: 2rem; padding-bottom: 2rem;}
+      #typing-animation {font-size: 20px;}
+      .navbar-brand {font-size: 22px;}
+      .heading-section h1.big,
+      .heading-section h2 {font-size: 28px;}
+      .nav-link {font-size: 18px;}
+      .resume-wrap {padding: 20px;}
+    }
+    /* Fix mobile nav menu overlapping issues */
+    @media (max-width: 991.98px) {
+      .navbar-collapse {background:#151515;}
+      .navbar-nav .nav-link {padding-left:18px;}
+      .ftco_navbar .navbar-nav.ml-auto {background: #151515;}
+    }
+  </style>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="60">
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target fixed-top" id="ftco-navbar">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Abhishek Pauriyal</a>
-    <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="oi oi-menu"></span> Menu
+    <a class="navbar-brand" href="#home-section">Abhishek Pauriyal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+      aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span>
     </button>
     <div class="collapse navbar-collapse" id="ftco-nav">
-      <ul class="navbar-nav nav ml-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
         <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
         <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
@@ -49,6 +68,7 @@
     </div>
   </div>
 </nav>
+
 <!-- HOME -->
 <section id="home-section" class="hero">
   <div class="home-slider owl-carousel">
@@ -159,10 +179,10 @@
           <div class="counter-wrap ftco-animate d-flex mt-md-3">
             <div class="text">
               <p class="mb-4">
-                <span class="number" data-number="6">0</span> <span>+</span>
+                <span class="number" data-number="6">6</span> <span>+</span>
                 <span>&nbsp; Projects completed</span>
               </p>
-              <p><a href="#" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+              <p><a href="https://www.linkedin.com/in/anku5680/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
             </div>
           </div>
         </div>
@@ -337,7 +357,7 @@
             <span class="icon-paper-plane"></span>
           </div>
           <h3 class="mb-4">Email Address</h3>
-          <p><a href="mailto:ankupauriyal7628@gmail.com">ankupauriyal@gmail.com</a></p>
+          <p><a href="mailto:ankupauriyal7628@gmail.com">ankupauriyal7628@gmail.com</a></p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -353,15 +373,15 @@
     <div class="container"><br><br>
       <div class="row justify-content-center">
         <div class="col-md-7 ftco-animate text-center">
-          <h2>Have a<span> Question? </span> <a href="#" class="btn btn-primary py-3 px-5">Contact me</a> </h2>
+          <h2>Have a<span> Question? </span> <a href="#contact-section" class="btn btn-primary py-3 px-5">Contact me</a> </h2>
         </div>
       </div>
       <br>
       <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
         <li class="ftco-animate normal-txt">Find me on</li>
-        <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
-        <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
-        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+        <li class="ftco-animate"><a href="https://www.linkedin.com/in/anku5680/" target="_blank"><span class="icon-linkedin"></span></a></li>
+        <li class="ftco-animate"><a href="https://github.com/abhishekpauriyal" target="_blank"><span class="icon-github"></span></a></li>
+        <li class="ftco-animate"><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
       </ul>
       <br>
     </div>
@@ -373,7 +393,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <p>&copy; <script>document.write(new Date().getFullYear());</script> Abhishek Pauriyal | All rights reserved</p>
+        <p>&copy;
+          <script>document.write(new Date().getFullYear());</script>
+          Abhishek Pauriyal | All rights reserved
+        </p>
       </div>
     </div>
   </div>
@@ -387,6 +410,7 @@
   </svg>
 </div>
 
+<!-- JS Dependencies - jQuery first, then Popper.js, then Bootstrap, then plugins -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
