@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Abhishek Pauriyal | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+<style>
+/* Inline summary CSS for demo; use style.css for full control */
+.about-mf .box-shadow-full {padding-top: 4rem;padding-bottom: 4rem;}
+.about-mf .about-img {margin-bottom: 2rem;}
+.about-mf .about-img img {margin-left: 10px;}
+.skill-mf .progress {margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem;}
+.skill-mf .progress .progress-bar {height: .7rem; background-color: #ffbd39;}
+/* Home typing animation */
+#typing-animation {position: relative; font-size: 30px; font-weight: bold; color: #fff; overflow: hidden; white-space: nowrap;}
+.zoom-effect {overflow: hidden; transition: transform 0.3s ease-out;}
+.zoom-effect:hover {transform: scale(1.1);}
+</style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Abhishek Pauriyal</a>
+    <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav nav ml-auto">
+        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+        <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+        <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+        <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- HOME -->
+<section id="home-section" class="hero">
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
+          <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+            <div class="overlay"></div>
+          </div>
+          <div class="one-forth d-flex align-items-center ftco-animate">
+            <div class="text">
+              <span class="subheading">Hello!</span>
+              <h1 class="mb-4 mt-3">I'm <span>Abhishek Pauriyal</span></h1>
+              <span id="typing-animation"></span>
+              <script>
+                const typingAnimationElement = document.getElementById('typing-animation');
+                const typingTexts = [
+                  'Finance Intern  ',
+                  'Data Analyst  ',
+                  'MBA Student   ',
+                ];
+                let typingIndex = 0, charIndex = 0;
+                function typingLoop() {
+                  if (charIndex < typingTexts[typingIndex].length) {
+                    typingAnimationElement.textContent += typingTexts[typingIndex][charIndex++];
+                    setTimeout(typingLoop, 130);
+                  } else {
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      typingIndex = (typingIndex + 1) % typingTexts.length;
+                      charIndex = 0;
+                      setTimeout(typingLoop, 600);
+                    }, 900);
+                  }
+                }
+                typingLoop();
+              </script>
+              <br><br>
+              <h2>MBA (Finance) | Data Analysis Enthusiast</h2>
+              <p>
+                <a href="mailto:ankupauriyal@gmail.com" class="btn btn-primary py-3 px-4">Email Me</a>
+                <a href="#" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-5 d-flex">
+          <div class="img-about img d-flex align-items-stretch">
+            <div class="overlay">
+              <div class="row">
+                <div class="col-sm-6 col-md-5">
+                  <div class="about-img">
+                    <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-7">
+                  <div class="about-info">
+                    <p><span class="title-s">Name: </span> <span>Abhishek Pauriyal</span></p>
+                    <p><span class="title-s">Job Role: </span> <span>Finance Intern & Data Analyst</span></p>
+                    <p><span class="title-s">Experience: </span> <span>Internships & Projects</span></p>
+                    <p><span class="title-s">Address: </span> <span>Sukha, Uttarakhand, India</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-mf">
+                <p class="title-s">Skills</p>
+                <span>MS Excel</span> <span class="pull-right">90%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
+                <span>Financial Modeling</span> <span class="pull-right">80%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
+                <span>Power BI</span> <span class="pull-right">75%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 75%"></div></div>
+                <span>Data Analysis</span> <span class="pull-right">85%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
+                <span>Finacle Core Banking Solution</span> <span class="pull-right">70%</span>
+                <div class="progress"><div class="progress-bar" role="progressbar" style="width: 70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <h1 class="big">About</h1>
+              <h2 class="mb-4">About Me</h2>
+              <p>Pursuing MBA (Finance) at Graphic Era Hill University. Passionate about financial markets, banking, and data-driven solutions. Hands-on in financial modeling, Excel, Power BI and comprehensive banking operations. Experienced in government scheme evaluation and rural banking impact analysis.</p>
+              <ul class="about-info mt-4 px-md-0 px-2">
+                <li class="d-flex"><span>Profile:</span> <span>Finance & Data Analysis</span></li>
+                <li class="d-flex"><span>Domain:</span> <span>Banking, Finance, SEO</span></li>
+                <li class="d-flex"><span>Education:</span> <span>MBA (Finance), B.Sc. (IT)</span></li>
+                <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+                <li class="d-flex"><span>Tools:</span> <span>Excel, Power BI, Finacle CBS, SEO Tools</span></li>
+                <li class="d-flex"><span>Interests:</span> <span>Financial Markets, Data Analysis</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+            <div class="text">
+              <p class="mb-4">
+                <span class="number" data-number="6">0</span> <span>+</span>
+                <span>&nbsp; Projects completed</span>
+              </p>
+              <p><a href="#" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Resume</h1>
+        <h2 class="mb-4">Resume</h2>
+        <p>Finance Intern & Data Analyst with proven skills in banking operations, financial reporting, and data insights.</p>
+      </div>
+    </div>
+    <div class="row">
+      <h1 class="big-4">Experience</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Jul 2025–Present</span>
+          <h2>Finance Intern</h2>
+          <span class="position">Nainital District Cooperative Bank</span>
+          <p class="mt-4">
+            <ul>
+              <li>Prepared financial reports, processed loans, handled daily banking transactions.</li>
+              <li>Performed CKYC verification and regulatory compliance.</li>
+              <li>Assisted in agricultural finance projects and rural banking impact studies.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Jan 2025–Mar 2025</span>
+          <h2>SEO Intern</h2>
+          <span class="position">BeeGraphy</span>
+          <p class="mt-4">
+            <ul>
+              <li>Managed on-page SEO and optimized website ranking.</li>
+              <li>Analyzed web analytics to boost page performance.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <h1 class="big-4">Education</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2024-2026</span>
+          <h2>MBA (Finance)</h2>
+          <span class="position">Graphic Era Hill University, Bhimtal</span>
+          <p class="mt-4">CGPA: 8.5/10 (Expected)</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2019-2022</span>
+          <h2>B.Sc. (Information Technology)</h2>
+          <span class="position">Kumaon University, Nainital</span>
+          <p class="mt-4">CGPA: 7/10</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 text-center ftco-animate">
+        <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Sample Finance, Data Analysis, and Banking projects completed during MBA and internships.</p>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="#">Agricultural Finance Impact Study</a></h3>
+            <p>Field study in Haldwani: Analyzed the impact and utilization of government agricultural loan schemes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="#">Power BI Banking Dashboard</a></h3>
+            <p>Created banking operations dashboard in Power BI for rural branch analysis and decision support.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="#">Government Scheme Evaluation</a></h3>
+            <p>Evaluated effectiveness of rural credit schemes and prepared impact reports using data analysis tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>More projects on <span>LinkedIn</span></h2>
+          <div class="heading">
+            <h4>Passionate about solving finance and data challenges</h4>
+            <br>
+            <p><a href="#" class="btn btn-primary py-3 px-5">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Reach out for opportunities or collaboration!</p>
+      </div>
+    </div>
+    <div class="row d-flex contact-info mb-5">
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p>Sukha, Uttarakhand, India</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel://9012245761">+91 9012245761</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-paper-plane"></span>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p><a href="mailto:ankupauriyal@gmail.com">ankupauriyal@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-globe"></span>
+          </div>
+          <h3 class="mb-4">Download Resume</h3>
+          <p><a href="#">Download</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container"><br><br>
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>Have a<span> Question? </span> <a href="#" class="btn btn-primary py-3 px-5">Contact me</a> </h2>
+        </div>
+      </div>
+      <br>
+      <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+        <li class="ftco-animate normal-txt">Find me on</li>
+        <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+        <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
+        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+      </ul>
+      <br>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ftco-footer ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Abhishek Pauriyal | All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Loader & JS -->
+<div id="ftco-loader" class="show fullscreen">
+  <svg class="circular" width="48px" height="48px">
+    <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+    <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+  </svg>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
